@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 2</title>
+    <style>
+        img{
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>hola x2</h1>
+    <p>Me alegra que pudiste pasar la primera parte, pero para desbloquear la siguiente imagen tendrás que hacer ahora...</p>
+    <P>Divide el radio del sol entre tu edad. A el numero que sea la moda multiplicalo por 2. Despues de eso sumale 5. ten ese numero en la mente.</P>
+    <p>cual es la raiz de 4? jajajajaj</p>
+    <p> ahora pon esos dos numeros</p>
+
+    <h2>Introduce los dos numeros juntos:</h2>
+    <form id="numeros">
+       <input type="text" id="Numero" placeholder="ejemplo 123" required> 
+       <button type="button" onclick="verificarresultado()">verificar</button>
+    </form>
+
+    <div id="resultado">
+        <img  id="imagenCorrecta"  src="Gloris/imagen2.png" alt="">
+    </div>
+    
+    <script>
+        function verificarresultado(){
+            // pedir el #
+            var numeroingresado = document.getElementById("Numero").value;
+
+            // veirficar si esta´correcto
+            if (numeroingresado === "172") {
+                console.log("hola")
+                document.getElementById("imagenCorrecta").style.display = 'block';
+              } else {
+                 document.getElementById("resultado").innerHTML = 'Fecha incorrecta. Inténtalo de nuevo.';
+            }
+        }
+    </script>
+    <h2>
+        <a href="http://127.0.0.1:5500/html/cumplea%C3%B1osG3.html"> click para seguir</a>
+    </h2>
+</body>
+</html>

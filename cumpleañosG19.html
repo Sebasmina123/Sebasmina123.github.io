@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parte 19</title>
+    <style>
+      img{
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: none;
+      }
+    </style>
+</head>
+<body>
+    <h1>Hola x19</h1>
+    <h2>Sueños.</h2>
+    <p>Anteriormente te dije que soy fan tuyo, pero también soy fan de tus sueños. Algo que no podría aceptar sería que dejes tus sueños atrás, por favor, sigue adelante aunque hayan miles de muros cada vez más altos, quiero verte con tu título y especialidad. Quiero verte triunfar. Convierte esos sueños en metas. No te rindas. </p>
+    <p></p>
+
+    <h2>Escribe "Sueños"</h2>
+    <form id="nombreForm">
+        <input type="text" id="nombreInput" placeholder="Flor" required>
+        <button type="button" onclick="verificarNombre()">Verificar</button>
+        </form>
+    
+      <div id="resultado">
+        <img  id="imagenCorrecta" src="Gloris/imagen19.png" alt="imagenCorrecta">
+      </div>
+    
+      <script>
+        function verificarNombre() {
+          var nombreIngresado = document.getElementById("nombreInput").value;
+    
+          if (nombreIngresado === "Sueños") {
+            document.getElementById("imagenCorrecta").style.display = 'block';
+          } else {
+            document.getElementById("resultado").innerHTML = 'Nombre incorrecto. Inténtalo de nuevo.';
+          }
+        }
+      </script>
+    <h2>
+        <a href="http://127.0.0.1:5500/html/cumplea%C3%B1osG20.html">click para seguir</a>
+    </h2>
+</body>
+</html>

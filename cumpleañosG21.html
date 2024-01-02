@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parte 21</title>
+    <style>
+      img{
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: none;
+      }
+    </style>
+</head>
+<body>
+    <h1>Hola x21</h1>
+    <h2>celular.</h2>
+    <p>celu celu celu celu celu me quedé sin ideas ayudaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+    <p></p>
+
+    <h2>Escribe "Celular"</h2>
+    <form id="nombreForm">
+        <input type="text" id="nombreInput" placeholder="Flor" required>
+        <button type="button" onclick="verificarNombre()">Verificar</button>
+        </form>
+    
+      <div id="resultado">
+        <img  id="imagenCorrecta" src="Gloris/imagen21.png" alt="imagenCorrecta">
+      </div>
+    
+      <script>
+        function verificarNombre() {
+          var nombreIngresado = document.getElementById("nombreInput").value;
+    
+          if (nombreIngresado === "Celular") {
+            document.getElementById("imagenCorrecta").style.display = 'block';
+          } else {
+            document.getElementById("resultado").innerHTML = 'Nombre incorrecto. Inténtalo de nuevo.';
+          }
+        }
+      </script>
+    <h2>
+        <a href="http://127.0.0.1:5500/html/cumplea%C3%B1osG22.html">click para seguir</a>
+    </h2>
+</body>
+</html>

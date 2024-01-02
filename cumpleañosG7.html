@@ -1,0 +1,64 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parte 7</title>
+
+  <style>
+    img{
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+
+    }
+  </style>
+</head>
+<body>
+  <h1>Hola x7</h1>
+  <p>Tienes que completar una canción.</p>
+
+  <script>
+    function validarRespuestas() {
+      var respuesta1 = prompt("Qué bien te ves.");
+      var respuesta2 = prompt("Dígame usted");
+      var respuesta3 = prompt("Una aventura es más divertida");
+      var respuesta4 = prompt("Si te invito a una copa y me acerco a tu boca");
+      var respuesta5 = prompt("¿Qué dirías si esta noche te seduzco en mi coche?");
+      var respuesta6 = prompt("Si te falto el respeto y luego culpo al alcohol");
+      var respuesta7 = prompt("A medir tu sensatez?");
+      var respuesta8 = prompt("Si te parece prudente");
+      
+
+      if (
+        respuesta1 === "Te adelanto, no me importa quién sea él" &&
+        respuesta2 === "Si ha hecho algo travieso alguna vez" &&
+        respuesta3 === "Si huele a peligro" &&
+        respuesta4 === "Si te robo un besito, a ver, ¿te enojas conmigo?" &&
+        respuesta5 === "Que se empañen los vidrios y la regla es que goces" &&
+        respuesta6 === "Si levanto tu falda, ¿me darías el derecho" &&
+        respuesta7 === "Poner en juego tu cuerpo" &&
+        respuesta8 === "Esta propuesta indecente" 
+        
+      ) {
+        mostrarImagen();
+      } else {
+        alert("Respuestas incorrectas. Inténtalo de nuevo.");
+      }
+    }
+
+    function mostrarImagen() {
+      var imagen = document.createElement("img");
+      imagen.src = "Gloris/imagen7.png"; // Reemplaza "url_de_la_imagen.jpg" con la URL de tu imagen
+      document.body.appendChild(imagen);
+    }
+
+    // Llamamos a la función de validación al cargar la página
+    window.onload = function() {
+      validarRespuestas();
+    };
+  </script>
+
+  <a href="http://127.0.0.1:5500/html/cumplea%C3%B1osG8.html"> click aqui para continuar</a>
+</body>
+</html>

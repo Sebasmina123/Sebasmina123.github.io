@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parte 26</title>
+    <style>
+      img{
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: none;
+      }
+    </style>
+</head>
+<body>
+    <h1>Hola x26</h1>
+    <h2>UWU.</h2>
+    <p> Las frases motivacionales nunca sobran. Aqui tienes otra xD</p>
+    <p></p>
+
+    <h2>Escribe "UWU"</h2>
+    <form id="nombreForm">
+        <input type="text" id="nombreInput" placeholder="Regalo" required>
+        <button type="button" onclick="verificarNombre()">Verificar</button>
+        </form>
+    
+      <div id="resultado">
+        <img  id="imagenCorrecta" src="Gloris/imagen26.png" alt="imagenCorrecta">
+      </div>
+    
+      <script>
+        function verificarNombre() {
+          var nombreIngresado = document.getElementById("nombreInput").value;
+    
+          if (nombreIngresado === "UWU") {
+            document.getElementById("imagenCorrecta").style.display = 'block';
+          } else {
+            document.getElementById("resultado").innerHTML = 'Nombre incorrecto. Inténtalo de nuevo.';
+          }
+        }
+      </script>
+    <h2>
+        <a href="http://127.0.0.1:5500/html/cumplea%C3%B1osG27.html">click para seguir</a>
+    </h2>
+</body>
+</html>

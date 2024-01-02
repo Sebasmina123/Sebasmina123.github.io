@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 9</title>
+
+    <style>
+        video{
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hola x9</h1>
+    <p> The amazing digital circus... oh, no conoces esa serie? mmmm meke.</p>
+
+    <h2>Ingresa el nombre de la personaje principal</h2>
+
+<label for="clave">Ingresa EL nombre:</label>
+<input type="text" id="clave" placeholder="Te recomendaría bajar el volumen...">
+<button onclick="verificarClave()">Verificar</button>
+
+<div id="video-container" style="display: none;">
+    <video  controls>
+        <source src="VideoGloris/Felicitaciones.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+</div>
+
+<script>
+    function verificarClave() {
+        var claveIngresada = document.getElementById("clave").value;
+
+        // Verificar si la clave es "Pomni"
+        if (claveIngresada === "Pomni") {
+            // Mostrar el contenedor de video
+            document.getElementById("video-container").style.display = "block";
+        } else {
+            // Ocultar el contenedor de video si la clave es incorrecta
+            document.getElementById("video-container").style.display = "none";
+            alert("Clave incorrecta. Inténtalo de nuevo.");
+        }
+    }
+</script>
+ <a href="http://127.0.0.1:5500/html/cumplea%C3%B1osG10.html"> click aqui para seguir</a>
+</body>
+</html>

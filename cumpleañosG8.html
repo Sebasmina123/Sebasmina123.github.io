@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="decoracionG8.css">
+    <title>octava parte</title>
+    <style>
+      img{
+        max-width: 100%;
+        display: none;
+        margin: 0 auto;
+        height: auto;
+      }
+    </style>
+</head>
+<body class="caja">
+    <h1 class="h-1">hola x8</h1>
+    <h2> Meses antes de hacer esto te prometí hacerte 31 imagenes, una por cada día de diciembre, pero para hacerlo más entretenido te lo estoy entregando por paginas, si esta es la pag 8, en qué día fue hecha la imagen?</h2>
+   
+    <h2>Introduce una fecha (DD/MM):</h2>
+
+  <form id="fechaForm">
+    <input type="text" id="fechaInput" placeholder="Ejemplo: 19/07" required>
+    <button type="button" onclick="verificarFecha()">Verificar</button>
+  </form>
+
+  <div id="resultado">
+    <img id="imagenCorrecta" src="Gloris/imagen8.png" alt="Imagen Correcta">
+  </div>
+
+  <script>
+    function verificarFecha() {
+      // Obtener el valor del campo de entrada de fecha
+      var fechaIngresada = document.getElementById("fechaInput").value;
+
+      // Verificar si la fecha ingresada es "08/12"
+      if (fechaIngresada === "08/12") {
+        console.log("Fecha correctaaaaaa. Mostrando primera imagen")
+        document.getElementById("imagenCorrecta").style.display = 'block';
+      } else {
+        document.getElementById("resultado").innerHTML = 'Fecha incorrecta. Inténtalo de nuevo.';
+      }
+    }
+  </script>
+  <h1 class="h-2">
+    <a href="http://127.0.0.1:5500/html/cumplea%C3%B1osG9.html">click aqui para seguir</a>
+  </h1>
+</body>
+
+</html>
